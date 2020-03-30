@@ -4,11 +4,12 @@ import 'package:flutter_webrtc/webrtc.dart';
 
 import 'random_string.dart';
 
-import 'utils/device_info.dart'
-    if (dart.library.js) '../utils/device_info_web.dart';
-import 'utils/websocket.dart'
-    if (dart.library.js) '../utils/websocket_web.dart';
-import 'utils/turn.dart' if (dart.library.js) '../utils/turn_web.dart';
+import 'package:p2papp/utils/device_info.dart'
+    if (dart.library.js) 'package:p2papp/utils/device_info_web.dart';
+import 'package:p2papp/utils/websocket.dart'
+    if (dart.library.js) 'package:p2papp/utils/websocket_web.dart';
+import 'package:p2papp/utils/turn.dart'
+    if (dart.library.js) 'package:p2papp/utils/turn_web.dart';
 
 enum SignalingState {
   CallStateNew,
