@@ -192,6 +192,7 @@ class _CallSampleState extends State<CallSample> {
                       left: 20.0,
                       top: 20.0,
                       child: GestureDetector(
+                        behavior: HitTestBehavior.deferToChild,
                         onTap: () {
                           print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
 
