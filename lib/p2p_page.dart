@@ -193,6 +193,8 @@ class _CallSampleState extends State<CallSample> {
                       top: 20.0,
                       child: GestureDetector(
                         onTap: () {
+                          print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+
                           setState(() {
                             userScan = !userScan;
                           });
